@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>التخطيط المالي - Business Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Business <span>Planner</span></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="monthly.html">الخطة الشهرية</a></li>
+            <li><a href="weekly.html">الخطة الأسبوعية</a></li>
+            <li><a href="daily.html">الخطة اليومية</a></li>
+            <li><a href="finances.html">المالية</a></li>
+            <li><a href="notes.html">ملاحظات</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="page-header">
+        <h1>التخطيط المالي</h1>
+        <p>متابعة الإيرادات والمصروفات المتعلقة بالبلانير أو مشروعك الصغير.</p>
+    </section>
+
+    <section class="grid grid-2">
+        <div class="card">
+            <h2>ملخص الشهر</h2>
+            <div class="row">
+                <div>
+                    <label>الشهر</label>
+                    <input type="text" placeholder="مثال: ديسمبر 2025">
+                </div>
+                <div>
+                    <label>هدف الإيراد</label>
+                    <input type="number" placeholder="مثال: 2000">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>إجمالي الإيرادات الفعلية</label>
+                    <input type="number" placeholder="0">
+                </div>
+                <div>
+                    <label>إجمالي المصروفات</label>
+                    <input type="number" placeholder="0">
+                </div>
+            </div>
+            <label>ملاحظات مالية</label>
+            <textarea placeholder="مثال: إعلانات مدفوعة، طباعة، تغليف، منصات بيع..."></textarea>
+        </div>
+
+        <div class="card">
+            <h2>أهم المنتجات / الباقات</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>المنتج</th>
+                        <th>السعر</th>
+                        <th>عدد القطع</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Notebook Planner (رقمي/مطبوع)"></td>
+                        <td><input type="number" placeholder="مثال: 59"></td>
+                        <td><input type="number" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="باقة أخرى"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+        <h2>سجل عمليات الشراء / المصروفات</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>التاريخ</th>
+                    <th>النوع</th>
+                    <th>الوصف</th>
+                    <th>المبلغ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="date"></td>
+                    <td>
+                        <select>
+                            <option>إيراد</option>
+                            <option>مصروف</option>
+                        </select>
+                    </td>
+                    <td><input type="text" placeholder="مثال: بيع نسخة بلانير / طباعة / إعلان"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="date"></td>
+                    <td>
+                        <select>
+                            <option>إيراد</option>
+                            <option>مصروف</option>
+                        </select>
+                    </td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+</body>
+</html>

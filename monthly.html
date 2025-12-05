@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الخطة الشهرية - Business Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Business <span>Planner</span></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="monthly.html">الخطة الشهرية</a></li>
+            <li><a href="weekly.html">الخطة الأسبوعية</a></li>
+            <li><a href="daily.html">الخطة اليومية</a></li>
+            <li><a href="finances.html">المالية</a></li>
+            <li><a href="notes.html">ملاحظات</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="page-header">
+        <h1>الخطة الشهرية</h1>
+        <p>تخطيط شهر كامل من حيث الأهداف، المحتوى، والمهام الأساسية.</p>
+    </section>
+
+    <section class="grid grid-2">
+        <div class="card">
+            <h2>بيانات الشهر</h2>
+            <div class="row">
+                <div>
+                    <label>الشهر</label>
+                    <input type="text" placeholder="مثال: ديسمبر 2025">
+                </div>
+                <div>
+                    <label>الفترة</label>
+                    <input type="text" placeholder="من ... إلى ...">
+                </div>
+            </div>
+
+            <h3>أهداف الشهر (SMART)</h3>
+            <textarea placeholder="اكتبي أهداف واضحة وقابلة للقياس، مثال: بيع 20 نسخة من البلانير، تصميم 5 صفحات جديدة، تجربة عرض ترويجي..."></textarea>
+        </div>
+
+        <div class="card">
+            <h2>محاور التركيز</h2>
+            <div class="row">
+                <div>
+                    <label>المبيعات</label>
+                    <textarea placeholder="خطط لزيادة المبيعات، العروض، الأكواد، التعاونات..."></textarea>
+                </div>
+                <div>
+                    <label>التسويق والمحتوى</label>
+                    <textarea placeholder="مواضيع بوستات، ريلز، حملات إعلانية..."></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+        <h2>تقسيم أسابيع الشهر</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>الأسبوع</th>
+                    <th>التركيز الأساسي</th>
+                    <th>المنتج / الخدمة</th>
+                    <th>تعليقات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>الأسبوع ١</td>
+                    <td><input type="text" placeholder="مثال: تجهيز التصميم الداخلي للبلانير"></td>
+                    <td><input type="text" placeholder="Notebook Planner"></td>
+                    <td><input type="text" placeholder="ملاحظات..."></td>
+                </tr>
+                <tr>
+                    <td>الأسبوع ٢</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>الأسبوع ٣</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>الأسبوع ٤</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+</body>
+</html>

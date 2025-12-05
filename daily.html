@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الخطة اليومية - Business Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Business <span>Planner</span></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="monthly.html">الخطة الشهرية</a></li>
+            <li><a href="weekly.html">الخطة الأسبوعية</a></li>
+            <li><a href="daily.html">الخطة اليومية</a></li>
+            <li><a href="finances.html">المالية</a></li>
+            <li><a href="notes.html">ملاحظات</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="page-header">
+        <h1>الخطة اليومية</h1>
+        <p>تنظيم تفاصيل يوم واحد من عملك أو عمل مشروع البلانير.</p>
+    </section>
+
+    <section class="grid grid-2">
+        <div class="card">
+            <div class="row">
+                <div>
+                    <label>التاريخ</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label>اليوم</label>
+                    <input type="text" placeholder="مثال: الأحد">
+                </div>
+            </div>
+
+            <h3>أهم ٣ أولويات لليوم</h3>
+            <div class="tasks-list">
+                <label class="task-item"><input type="checkbox"><input type="text" placeholder="أولوية ١"></label>
+                <label class="task-item"><input type="checkbox"><input type="text" placeholder="أولوية ٢"></label>
+                <label class="task-item"><input type="checkbox"><input type="text" placeholder="أولوية ٣"></label>
+            </div>
+
+            <h3 style="margin-top: 10px;">مواعيد مهمة</h3>
+            <textarea placeholder="مكالمات، اجتماعات، تسليمات..."></textarea>
+        </div>
+
+        <div class="card">
+            <h2>جدول اليوم (ساعات)</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>الوقت</th>
+                        <th>النشاط / المهمة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>8:00 - 9:00</td><td><input type="text" placeholder="..."></td></tr>
+                    <tr><td>9:00 - 10:00</td><td><input type="text"></td></tr>
+                    <tr><td>10:00 - 11:00</td><td><input type="text"></td></tr>
+                    <tr><td>11:00 - 12:00</td><td><input type="text"></td></tr>
+                    <tr><td>12:00 - 1:00</td><td><input type="text"></td></tr>
+                    <tr><td>1:00 - 2:00</td><td><input type="text"></td></tr>
+                    <tr><td>2:00 - 3:00</td><td><input type="text"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="grid grid-2" style="margin-top: 18px;">
+        <div class="card">
+            <h3>ملاحظات عن اليوم</h3>
+            <textarea placeholder="أي ملاحظات أو أفكار ظهرت خلال العمل اليوم..."></textarea>
+        </div>
+        <div class="card">
+            <h3>تقييم اليوم</h3>
+            <label>كيف كان إنتاجك اليوم؟ (من ١ إلى ١٠)</label>
+            <input type="number" min="1" max="10" placeholder="7">
+            <label>ما الذي يمكن تحسينه غداً؟</label>
+            <textarea></textarea>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

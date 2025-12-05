@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Planner - لوحة التحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقّل -->
+    <header class="navbar">
+        <div class="logo">Business <span>Planner</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="monthly.html">الخطة الشهرية</a></li>
+                <li><a href="weekly.html">الخطة الأسبوعية</a></li>
+                <li><a href="daily.html">الخطة اليومية</a></li>
+                <li><a href="finances.html">المالية</a></li>
+                <li><a href="notes.html">ملاحظات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>لوحة التحكم</h1>
+            <p>نظرة سريعة على أهم عناصر البلانير الخاص بمشروعك.</p>
+        </section>
+
+        <section class="grid grid-3">
+            <div class="card">
+                <span class="badge">نظرة عامة</span>
+                <h2>أهداف هذا الشهر</h2>
+                <p style="font-size: 13px; margin-bottom: 10px;">
+                    اكتبي هنا أهم ٣–٥ أهداف أساسية لهذا الشهر في مشروعك.
+                </p>
+                <textarea placeholder="مثال: إنهاء تصميم صفحات البلانير، تجهيز نموذج الطباعة، فتح حساب إنستقرام للمنتج..."></textarea>
+            </div>
+
+            <div class="card">
+                <span class="badge">اليوم</span>
+                <h2>أهم ٣ مهام اليوم</h2>
+                <div class="tasks-list">
+                    <label class="task-item">
+                        <input type="checkbox">
+                        <input type="text" placeholder="مهمة ١">
+                    </label>
+                    <label class="task-item">
+                        <input type="checkbox">
+                        <input type="text" placeholder="مهمة ٢">
+                    </label>
+                    <label class="task-item">
+                        <input type="checkbox">
+                        <input type="text" placeholder="مهمة ٣">
+                    </label>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">مؤشرات</span>
+                <h2>أرقام سريعة</h2>
+                <div class="row">
+                    <div>
+                        <label>عدد الطلبات هذا الشهر</label>
+                        <input type="number" placeholder="0">
+                    </div>
+                    <div>
+                        <label>إجمالي الإيرادات (تقريبي)</label>
+                        <input type="number" placeholder="0">
+                    </div>
+                    <div>
+                        <label>إجمالي المصروفات</label>
+                        <input type="number" placeholder="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
